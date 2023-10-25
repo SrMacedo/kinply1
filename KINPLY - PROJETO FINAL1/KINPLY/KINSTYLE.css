@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(37, 23, 23);
+    background: linear-gradient(#1947A4, #070C74);
+}
+
+/* STYLE BACKGROUND */
+
+.conteudo {
+    /* background: linear-gradient(#1947A4, #070C74); */
+
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    height: fit-content;
+    width: 100%;
+}
+
+/* svg {
+    border: 1px solid white;
+} */
+
+
+/* STYLE BACKGROUND */
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 20vh;
+} 
+
+.retangulo-profile {
+    width: 80%;
+    height: 70%;
+
+    background: #fcfcfc55;
+
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 1%;
+}
+
+.profile-picture {
+    width: 8vh;
+    height: 8vh;
+
+    border-radius: 50px;
+
+    background-color: white;
+}
+
+.contain-info-profile {
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+/* 
+    border: 1px solid red; */
+
+
+}
+
+.text-info-profile {
+    color: white;
+    font-size: smaller;
+
+}
+
+.text-info-profile h2{
+    font-weight: 700;
+}
+
+.text-info-profile h3{
+    font-weight: 600;
+}
+
+.text-info-profile h4{
+    font-weight: 500;
+}
+
+/* .allfilter {
+} */
+
+.filterarea {
+    display: flex;
+    align-items: center;
+}
+
+/* JS FILTER - GUILHERME!! */
+.filter-active { 
+    background-color: rgba(255, 255, 255, 0.281);
+    height: 4vh;
+    width: 5vw;
+    
+    position: absolute;
+    top: 10%;
+    right: 2.5%;
+    color: white;
+
+    border-radius: 10px;
+    display: none;
+
+} 
+
+/* JS FILTER */
+
+.filter-active  option {
+    background-color: #6c82af;
+    
+}
+
+/* JS FILTER */
+
+#filterlink {
+    color: white;
+}
+
+.filterarea:hover{
+    background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 5px;
+}
+
+/* HEADER */
+
+/* ESPAÇO DE DADOS */
+
+.data {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.data select {
+    background: #fcfcfc55;
+    color: white;
+    border: none;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    border-radius: 10px;
+    
+    width: 8vw;
+    height: 4vh;
+}
+
+.data select option{
+    color: rgb(0, 0, 0);
+    color: white;
+    background-color: #6c82af;
+    border: none;
+}
+
+
+/* ESPAÇO DE DADOS */
+
+/* LISTA DE ALUNOS */
+
+.chamadas {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+
+}
+/* 
+.espaco {
+    border: 1px solid white;
+
+    height: 100%;
+    width: 10%;
+} */
+
+
+
+/* CONTAIN RETANGULOS */
+.lista-alunos {
+    width: 100%;
+    height: 100%;
+
+
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    /* border: 1px solid red; */
+    /* justify-content: space-around; */
+}
+/* CONTAIN RETANGULOS */
+
+
+/* CONFIG RETANGULOS */
+
+.retangulos-info-aluno-desc {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 1%;
+
+}
+
+.retangulo-aluno {
+    margin-top: 5%;
+    width: 82%;
+    height: 20vh;
+    padding: 1% 0% 1% 1%;
+
+    border-radius: 20px;
+    background: #fcfcfc60;
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+
+}
+
+.retangulo-aluno-descricao {
+    width: 78%;
+    height: 22vh;
+    padding: 1% 0% 1% 1%;
+
+    border-radius: 20px;
+
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background: #fcfcfc48;
+
+
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+
+}
+
+/* CONFIG RETANGULOS */
+
+
+/* INSIDE RETANGULOS */
+.aluno-profile-picture {
+    background-color: white;
+
+    width: 10vh;
+    height: 10vh;
+
+    border-radius: 40px;
+}
+
+/* INSIDE RETANGULOS */
+
+.pfp-info-aluno {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+}
+
+.info-aluno {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+}
+
+/* .info-aluno h4, h5{
+    color: white;
+} */
+
+
+.info-aluno h4{
+    font-weight: 600;
+    font-size: larger;
+}
+
+.info-aluno h4:hover{
+    background-color: rgba(255, 255, 255, 0.205);
+    border-radius: 5px;
+}
+
+
+.info-aluno h5{
+    font-weight: 400;
+}
+
+.info-aluno h5:hover{
+    background-color: rgba(255, 255, 255, 0.205);
+    border-radius: 5px;
+}
+
+.registrar-ausencia {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.checkbox {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+
+    border: none;
+
+    border: 5px solid greenyellow;
+}
+
+.checkbox2 {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+
+}
+
+.checks {
+    display: flex;
+    align-items: center;
+}
+
+.checks-pres {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.checks-labels {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin-right: 5%;
+}
+
+.registrar-ausencia h4{
+    font-weight: 600;
+}
+
+.arrow-down:hover {
+    cursor: pointer;
+}
+
+
+/* LISTA DE ALUNOS */
+
+
+/* BOTAO SUBMIT */
+
+.submits {
+    align-self: center;
+    width: 20%;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-bottom: 1%;
+
+}
+
+.submit {
+    padding: 2%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(38, 161, 38);
+    color: white;
+    font-weight: 600;
+    width: 20%;
+    height: 5vh;
+    margin-top: 5%;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: rgb(27, 112, 27);
+}
+
+/* FORMULÁRIO */
+.formulario-chamada {
+
+    display: flex;
+    width: 100%;
+}
+
+
+@media (max-width: 930px) {
+    .contain-info-profile {
+        width: 25%;
+
+        border: 1px solid blue;
+
+    
+    
+    }
+}
